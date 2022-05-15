@@ -1,0 +1,24 @@
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2022-05-15T21:37:22.133789800+02:00"
+from:
+  id-type: crev
+  id: WDCPaB7yf1sk_vASMwGoeZtgut0sWzC1ZR_Ablt1Y5A
+  url: "https://github.com/V0ldek/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: page_size
+  version: 0.4.2
+  revision: 290f3da944d0f1c86612172ec84958a9dbf910ac
+  digest: FPfIfi0hEp3fS3jqrj6LElRdjyFg-PESwmF9wvJ5MqA
+review:
+  thoroughness: medium
+  understanding: high
+  rating: positive
+comment: |-
+  UNIX and Windows impl is simple and correct. On other platforms it defaults to 4KB page size unconditionally, which might not be accurate. According to the documentation it is not tested on any other platforms, so it should not be relied on when targeting different architectures.
+----- SIGN CREV PROOF -----
+l9_HfXD3EukBOxllkam9bFUJjutPTlxGBCoYv-iwfD3vpgQ--5Uyv5jUVcoUnvFwJ_7Ra2dtc-xr4QFnJRHmDw
+----- END CREV PROOF -----
+
